@@ -48,6 +48,11 @@
 		margin-bottom: 20px;
 	}
 
+	img, video {
+		border: 0.5px solid #D7DCE0;
+		background-color: white;
+	}
+
 	em {
 		display: block;
 		margin-bottom: 80px;
@@ -55,11 +60,36 @@
 		font-size: 0.8em;
 	}
 
+	@media (max-width: 800px) {
+		.warning {
+			position: fixed;
+			/*display: none;*/
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background-color: RGBA(0, 126, 229, 0.9);
+			color: white;
+			font-size: 4em;
+			font-weight: 200;
+			padding: 100px;
+			text-align: left;
+			content: "😌";
+		}
+	}
+
+	@media (min-width: 800px) {
+		.warning {
+			display: block;
+		}
+	}
+
 </style>
 <title>Colin Dunn - Portfolio</title>
 </head>
 <body>
-	<h1>I thrive working with early stage teams prototyping new product ideas.</p>
+	<div class="warning">Doesn't work on mobile yet &#128532;</div>
+	<h1>Early stage product development <br />and prototyping.</p>
 
 	<h1>Carousel <date>2014</date></h1>
 	<p>I worked with the Carousel team on user interface ideas for sharing and navigating photos.</p>

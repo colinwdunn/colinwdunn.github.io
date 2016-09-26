@@ -22,6 +22,11 @@
 		font-weight: 200;
 	}
 
+	h1 a {
+		text-decoration: none;
+		border-bottom: 2px solid black;
+	}
+
 	h2 {
 		color: #7b8994;
 		font-size: 28px;
@@ -30,6 +35,7 @@
 
 	h3 {
 		text-transform: uppercase;
+		letter-spacing: 1px;
 		font-size: 14px;
 		font-weight: 500;
 		color: #7b8994;
@@ -38,20 +44,22 @@
 	ul {
 		list-style-type: none;
 		padding: 0;
+		line-height: 22px;
 	}
 
-	ul li.title {
-		font-size: 22px;
-		color: #25282b;
-	}
-
-	ul li.title a {
+	ul li a {
 		background-color: #FFF8A3;
 		text-decoration: none;
 	}
 
-	ul li.title a:hover {
+	ul li a:hover {
 		background-color: #FFF579;
+	}
+
+	ul li.title {
+		font-size: 22px;
+		margin-bottom: 2px;
+		color: #25282b;
 	}
 
 	ul li {
@@ -126,7 +134,7 @@
 <div class="container">
 
 	<div class="title">
-		<h1>Colin Dunn is a <span>freelance</span> product designer living in San Francisco.</h1>
+		<h1>Colin Dunn is an entrepreneur & product designer <a href="mailto:hello@colindunn.com?subject=Freelance inquiry">for hire</a> living in San Francisco.</h1>
 	</div>
 
 	<div class="clearfix"></div>
